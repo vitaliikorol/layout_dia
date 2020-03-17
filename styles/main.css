@@ -8,7 +8,232 @@ h1 {
   font-weight: normal;
   font-style: normal; }
 
+html,
+body,
+ul,
+li,
+textarea,
+button,
+input,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0; }
+
+.header {
+  background-color: #008aff;
+  border-bottom-left-radius: 200px;
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+  .header__container {
+    width: calc(100% - 228px);
+    height: calc(100% - 49px); }
+  .header__nav {
+    height: 26px;
+    margin-right: 228px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+.nav {
+  position: relative; }
+  .nav__img {
+    display: inline-block;
+    background-image: url("../images/logo/Air.png");
+    width: 45px;
+    height: 26px;
+    margin-right: 78px; }
+  .nav__hiring {
+    position: absolute;
+    right: 0;
+    line-height: 170%;
+    padding: 0 10px 5px;
+    border-radius: 5px;
+    -webkit-transition: background-color 0.4s, -webkit-box-shadow 0.4s;
+    transition: background-color 0.4s, -webkit-box-shadow 0.4s;
+    transition: background-color 0.4s, box-shadow 0.4s;
+    transition: background-color 0.4s, box-shadow 0.4s, -webkit-box-shadow 0.4s; }
+    .nav__hiring:hover {
+      background-color: #2da0ff; }
+    .nav__hiring::before {
+      content: "";
+      background-color: #ff9c8e;
+      width: 68px;
+      height: 2px;
+      position: absolute;
+      right: 11px;
+      bottom: -4px;
+      border-radius: 1px; }
+    .nav__hiring_link {
+      text-decoration: none;
+      color: white;
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 600; }
+
+.list {
+  white-space: nowrap;
+  width: 50%;
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .list__link {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    line-height: 150%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 5px;
+    -webkit-transition: background-color 0.4s, -webkit-box-shadow 0.4s;
+    transition: background-color 0.4s, -webkit-box-shadow 0.4s;
+    transition: background-color 0.4s, box-shadow 0.4s;
+    transition: background-color 0.4s, box-shadow 0.4s, -webkit-box-shadow 0.4s; }
+    .list__link:hover {
+      background-color: #2da0ff;
+      -webkit-box-shadow: 0 2px 4px white;
+              box-shadow: 0 2px 4px white; }
+
+.title {
+  margin-top: 165px;
+  position: relative;
+  height: 355px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .title__heading_text {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 68px;
+    letter-spacing: -2px;
+    color: white; }
+  .title__description {
+    margin-top: 32px;
+    font-size: 18px;
+    line-height: 150%;
+    font-family: "Open Sans", sans-serif;
+    color: white; }
+  .title__action {
+    position: absolute;
+    bottom: 0;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: white;
+    font-size: 15px;
+    line-height: 22px;
+    width: 226px;
+    height: 50px;
+    border-radius: 64px;
+    background-color: #ff9c8e;
+    -webkit-transition: -webkit-box-shadow 0.4s;
+    transition: -webkit-box-shadow 0.4s;
+    transition: box-shadow 0.4s;
+    transition: box-shadow 0.4s, -webkit-box-shadow 0.4s;
+    outline: none; }
+    .title__action:hover {
+      cursor: pointer;
+      -webkit-box-shadow: 0 2px 4px white;
+              box-shadow: 0 2px 4px white; }
+
+.carousel {
+  position: absolute;
+  right: 0;
+  top: 120px; }
+  .carousel__img {
+    background-image: url("../images/slider/slider1.png");
+    border-top-left-radius: 200px;
+    width: 687px;
+    height: 680px; }
+  .carousel__control {
+    position: absolute;
+    left: 48px;
+    bottom: 66px; }
+    .carousel__control_left {
+      background-image: url("../images/slider/Vectorarr_left.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 6px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      outline: none;
+      margin-right: 4px; }
+      .carousel__control_left:hover {
+        cursor: pointer; }
+    .carousel__control_right {
+      background-image: url("../images/slider/Vector.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 6px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      outline: none; }
+      .carousel__control_right:hover {
+        cursor: pointer; }
+  .carousel__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 264px;
+    height: 68px;
+    position: absolute;
+    left: 144px;
+    bottom: 48px; }
+    .carousel__title_heading {
+      font-size: 13px;
+      line-height: 19px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      color: white; }
+    .carousel__title_description {
+      font-size: 14px;
+      line-height: 140%;
+      font-style: normal;
+      font-weight: normal;
+      color: white;
+      font-family: "Open Sans", sans-serif; }
+
 body {
-  background: #eee; }
+  background-color: #e5e5e5; }
 
 /*# sourceMappingURL=main.css.map */
