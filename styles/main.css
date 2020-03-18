@@ -406,6 +406,157 @@ h4 {
     visibility: visible;
     top: 40px; } }
 
+.wwa {
+  -webkit-transition: width 1s;
+  transition: width 1s;
+  position: relative;
+  margin: 148px auto;
+  max-width: 754px; }
+  @media screen and (max-width: 1100px) {
+    .wwa {
+      width: calc(100% - 57px); } }
+  @media screen and (max-width: 450px) {
+    .wwa {
+      width: 95%; } }
+  .wwa__title {
+    margin-bottom: 16px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+    color: #253757; }
+  .wwa__description {
+    font-family: "Open Sans", sans-serif;
+    color: #6c788b;
+    font-size: 24px;
+    line-height: 150%; }
+
+.expertise {
+  padding: 128px 0 95px;
+  background-color: white; }
+  .expertise__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 64px; }
+    .expertise__title_text {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-weight: 600;
+      font-size: 52px;
+      line-height: 150%;
+      color: #253757; }
+  .expertise__cards {
+    position: relative; }
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  @media screen and (max-width: 600px) {
+    .cards {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+  .cards__1 {
+    display: inline-block;
+    text-align: center; }
+    .cards__1_img {
+      background-image: url("../images/what-we-do/image 1.png");
+      width: 184px;
+      height: 166px;
+      display: inline-block;
+      background-size: 100% 100%;
+      border-radius: 24px;
+      background-position: center;
+      background-repeat: no-repeat; }
+    .cards__1_title {
+      margin: 40px 0 16px;
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      color: #253757;
+      font-size: 20px;
+      line-height: 140%; }
+    .cards__1_description {
+      display: inline-block;
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+      line-height: 150%;
+      max-width: 265px;
+      padding: 0 15px;
+      margin-bottom: 60px; }
+  .cards__2 {
+    display: inline-block;
+    text-align: center; }
+    .cards__2_img {
+      background-image: url("../images/what-we-do/image 2.png");
+      width: 184px;
+      height: 166px;
+      display: inline-block;
+      background-size: 100% 100%;
+      border-radius: 24px;
+      background-position: center;
+      background-repeat: no-repeat; }
+    .cards__2_title {
+      margin: 40px 0 16px;
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      color: #253757;
+      font-size: 20px;
+      line-height: 140%; }
+    .cards__2_description {
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+      line-height: 150%;
+      max-width: 265px;
+      padding: 0 15px;
+      display: inline-block;
+      margin-bottom: 60px; }
+  .cards__3 {
+    display: inline-block;
+    text-align: center; }
+    .cards__3_img {
+      background-image: url("../images/what-we-do/image 3.png");
+      width: 184px;
+      height: 166px;
+      display: inline-block;
+      background-size: 100% 100%;
+      border-radius: 24px;
+      background-position: center;
+      background-repeat: no-repeat; }
+    .cards__3_title {
+      margin: 40px 0 16px;
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      color: #253757;
+      font-size: 20px;
+      line-height: 140%; }
+    .cards__3_description {
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+      line-height: 150%;
+      max-width: 265px;
+      padding: 0 15px;
+      display: inline-block; }
+
 body {
   background-color: #e5e5e5; }
 
