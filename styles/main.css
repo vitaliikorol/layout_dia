@@ -564,6 +564,14 @@ a {
 
 .process {
   position: relative; }
+  @media screen and (max-width: 980px) {
+    .process {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
   .process__wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -576,7 +584,18 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
     max-width: 1146px;
-    margin: 148px auto 44px; }
+    margin: 148px auto 44px;
+    -webkit-transition: margin 2s;
+    transition: margin 2s; }
+    @media screen and (max-width: 1280px) {
+      .process__wrap {
+        margin: 148px 30px 44px; } }
+    @media screen and (max-width: 980px) {
+      .process__wrap {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
   .process__info {
     max-width: 362px; }
     .process__info_header {
@@ -611,10 +630,23 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row; }
+  @media screen and (max-width: 600px) {
+    .pcc {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
   .pcc__left {
     position: relative;
     top: 132px;
     margin-right: 30px; }
+    @media screen and (max-width: 600px) {
+      .pcc__left {
+        top: 50px;
+        margin-right: 0; } }
     .pcc__left_top {
       width: 264px;
       height: 264px;
@@ -678,6 +710,10 @@ a {
               box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
       position: relative;
       margin-bottom: 30px; }
+      @media screen and (max-width: 600px) {
+        .pcc__left_bot {
+          position: relative;
+          top: 295px; } }
       .pcc__left_bot-num {
         background-color: #e8fbee;
         color: #15d850;
@@ -731,6 +767,10 @@ a {
     -webkit-box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
             box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
     margin-bottom: 30px; }
+    @media screen and (max-width: 600px) {
+      .pcc__right_top {
+        position: relative;
+        bottom: 243px; } }
     .pcc__right_top-num {
       background-color: #fffae8;
       color: #fcc304;
@@ -783,6 +823,10 @@ a {
     background: #fff;
     -webkit-box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
             box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03); }
+    @media screen and (max-width: 600px) {
+      .pcc__right_bot {
+        position: relative;
+        top: 53px; } }
     .pcc__right_bot-num {
       background-color: #feefef;
       color: #f25656;
