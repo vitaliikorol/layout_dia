@@ -45,7 +45,24 @@ a {
       height: 700px; } }
   @media screen and (max-width: 970px) {
     .header {
-      height: 1400px; } }
+      height: 1300px;
+      border-bottom-left-radius: 180px; } }
+  @media screen and (max-width: 768px) {
+    .header {
+      height: 1100px;
+      border-bottom-left-radius: 130px; } }
+  @media screen and (max-width: 600px) {
+    .header {
+      height: 1000px;
+      border-bottom-left-radius: 100px; } }
+  @media screen and (max-width: 450px) {
+    .header {
+      height: 900px;
+      border-bottom-left-radius: 70px; } }
+  @media screen and (max-width: 320px) {
+    .header {
+      height: 800px;
+      border-bottom-left-radius: 50px; } }
   .header__container {
     width: calc(100% - 228px);
     height: calc(100% - 49px);
@@ -164,11 +181,20 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-transition: margin-top 1s;
-  transition: margin-top 1s; }
+  -webkit-transition: margin-top 1s, left 1s;
+  transition: margin-top 1s, left 1s; }
   @media screen and (max-width: 970px) {
     .title {
       margin-top: 750px; } }
+  @media screen and (max-width: 768px) {
+    .title {
+      margin-top: 650px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); } }
+  @media screen and (max-width: 600px) {
+    .title {
+      margin-top: 90vw; } }
   .title__heading_text {
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -219,7 +245,7 @@ a {
   @media screen and (max-width: 970px) {
     .carousel {
       right: calc((100vw - 687px) / 2); } }
-  @media screen and (max-width: 730px) {
+  @media screen and (max-width: 768px) {
     .carousel {
       right: 10vw; } }
   .carousel__img {
@@ -241,9 +267,11 @@ a {
       .carousel__img {
         width: 687px;
         border-radius: 100px; } }
-    @media screen and (max-width: 730px) {
+    @media screen and (max-width: 768px) {
       .carousel__img {
-        width: 80vw; } }
+        width: 80vw;
+        height: 80vw;
+        border-radius: 50px; } }
   .carousel__control {
     position: absolute;
     left: 48px;
@@ -252,7 +280,7 @@ a {
     transition: bottom 1s; }
     @media screen and (max-width: 400px) {
       .carousel__control {
-        bottom: 98px; } }
+        bottom: 50px; } }
     .carousel__control_left {
       background-image: url("../images/slider/Vectorarr_left.svg");
       background-repeat: no-repeat;
@@ -299,7 +327,6 @@ a {
         width: 150px; } }
     @media screen and (max-width: 400px) {
       .carousel__title {
-        bottom: 80px;
         width: 35vw; } }
     .carousel__title_heading {
       font-size: 13px;
@@ -564,7 +591,7 @@ a {
 
 .process {
   position: relative; }
-  @media screen and (max-width: 980px) {
+  @media screen and (max-width: 1040px) {
     .process {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -589,8 +616,8 @@ a {
     transition: margin 2s; }
     @media screen and (max-width: 1280px) {
       .process__wrap {
-        margin: 148px 30px 44px; } }
-    @media screen and (max-width: 980px) {
+        margin: 148px 60px 44px; } }
+    @media screen and (max-width: 1040px) {
       .process__wrap {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
