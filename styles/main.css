@@ -294,7 +294,8 @@ a {
       height: 32px;
       border-radius: 50%;
       outline: none;
-      margin-right: 4px; }
+      margin-right: 4px;
+      border: none; }
       .carousel__control_left:hover {
         cursor: pointer; }
     .carousel__control_right {
@@ -305,7 +306,8 @@ a {
       width: 32px;
       height: 32px;
       border-radius: 50%;
-      outline: none; }
+      outline: none;
+      border: none; }
       .carousel__control_right:hover {
         cursor: pointer; }
   .carousel__title {
@@ -1278,9 +1280,7 @@ a {
     transition: margin-top 1s; }
     @media screen and (min-width: 2000px) {
       .testimonials__header {
-        text-align: center;
-        -webkit-transform: scale(1.5);
-                transform: scale(1.5); } }
+        text-align: center; } }
     @media screen and (max-width: 800px) {
       .testimonials__header {
         margin-top: 30px; } }
@@ -1295,6 +1295,9 @@ a {
       letter-spacing: 3px;
       color: #c0cdd7;
       margin-bottom: 16px; }
+      @media screen and (min-width: 2000px) {
+        .testimonials__header_title {
+          font-size: 2rem; } }
     .testimonials__header_description {
       font-family: "Poppins", sans-serif;
       font-style: normal;
@@ -1310,6 +1313,9 @@ a {
       @media screen and (max-width: 800px) {
         .testimonials__header_description {
           margin-bottom: 20px; } }
+      @media screen and (min-width: 2000px) {
+        .testimonials__header_description {
+          font-size: 4rem; } }
   .testimonials__cards {
     display: -webkit-box;
     display: -ms-flexbox;
