@@ -1662,7 +1662,15 @@ a {
     -webkit-transform: rotate(-65deg);
             transform: rotate(-65deg);
     right: 480px;
-    bottom: 120px; }
+    bottom: 120px;
+    -webkit-transition: right 1s, bottom 1s;
+    transition: right 1s, bottom 1s; }
+    @media screen and (max-width: 1180px) {
+      .bar__left {
+        right: 280px;
+        bottom: 120px; }
+        .bar__left:first-child {
+          bottom: 50px; } }
     .bar__left_2 {
       right: 880px;
       bottom: 130px;
@@ -1680,16 +1688,18 @@ a {
     -webkit-transform: rotate(-65deg);
             transform: rotate(-65deg);
     left: 530px;
-    top: 50px; }
+    top: 50px;
+    -webkit-transition: left 1s;
+    transition: left 1s; }
+    @media screen and (max-width: 1180px) {
+      .bar__right {
+        left: 300px; } }
     .bar__right_2 {
       left: 1030px;
       top: 50px;
       opacity: 0;
       -webkit-transition: opacity 3s;
       transition: opacity 3s; }
-      @media screen and (min-width: 2160px) {
-        .bar__right_2 {
-          opacity: 1; } }
   .bar__1 {
     position: absolute;
     left: -40px; }
