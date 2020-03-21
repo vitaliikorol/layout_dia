@@ -1797,6 +1797,7 @@ a {
     border: 5px solid #fcc304; }
 
 .footer {
+  overflow: hidden;
   position: relative;
   background-color: #fff; }
   .footer__nav {
