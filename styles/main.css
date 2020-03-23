@@ -807,7 +807,15 @@ a {
       -webkit-box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
               box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
       position: relative;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      -webkit-transition: -webkit-box-shadow 1s;
+      transition: -webkit-box-shadow 1s;
+      transition: box-shadow 1s;
+      transition: box-shadow 1s, -webkit-box-shadow 1s; }
+      .pcc__left_top:hover {
+        -webkit-box-shadow: 0 2px 4px black;
+                box-shadow: 0 2px 4px black;
+        cursor: pointer; }
       .pcc__left_top-num {
         background-color: #eefafe;
         color: #56ccf2;
@@ -864,7 +872,15 @@ a {
               box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
       z-index: 1;
       position: relative;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      -webkit-transition: -webkit-box-shadow 1s;
+      transition: -webkit-box-shadow 1s;
+      transition: box-shadow 1s;
+      transition: box-shadow 1s, -webkit-box-shadow 1s; }
+      .pcc__left_bot:hover {
+        -webkit-box-shadow: 0 2px 4px black;
+                box-shadow: 0 2px 4px black;
+        cursor: pointer; }
       @media screen and (max-width: 600px) {
         .pcc__left_bot {
           position: relative;
@@ -919,7 +935,15 @@ a {
     background: #fff;
     -webkit-box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
             box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    -webkit-transition: -webkit-box-shadow 1s;
+    transition: -webkit-box-shadow 1s;
+    transition: box-shadow 1s;
+    transition: box-shadow 1s, -webkit-box-shadow 1s; }
+    .pcc__right_top:hover {
+      -webkit-box-shadow: 0 2px 4px black;
+              box-shadow: 0 2px 4px black;
+      cursor: pointer; }
     @media screen and (max-width: 600px) {
       .pcc__right_top {
         position: relative;
@@ -974,7 +998,15 @@ a {
     background: #fff;
     -webkit-box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
             box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
-    z-index: 1; }
+    z-index: 1;
+    -webkit-transition: -webkit-box-shadow 1s;
+    transition: -webkit-box-shadow 1s;
+    transition: box-shadow 1s;
+    transition: box-shadow 1s, -webkit-box-shadow 1s; }
+    .pcc__right_bot:hover {
+      -webkit-box-shadow: 0 2px 4px black;
+              box-shadow: 0 2px 4px black;
+      cursor: pointer; }
     @media screen and (max-width: 600px) {
       .pcc__right_bot {
         position: relative;
