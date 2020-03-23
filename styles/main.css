@@ -59,16 +59,16 @@ a {
       border-bottom-left-radius: 100px; } }
   @media screen and (max-width: 450px) {
     .header {
-      height: 900px;
+      height: 800px;
       border-bottom-left-radius: 70px; } }
   @media screen and (max-width: 380px) {
     .header {
-      height: 850px;
+      height: 750px;
       border-bottom-left-radius: 70px; } }
   @media screen and (max-width: 320px) {
     .header {
-      height: 800px;
-      border-bottom-left-radius: 50px; } }
+      border-bottom-left-radius: 50px;
+      height: 710px; } }
   @media screen and (min-width: 2000px) {
     .header {
       -webkit-box-pack: center;
@@ -222,7 +222,11 @@ a {
       margin-top: 650px;
       left: 50%;
       -webkit-transform: translateX(-50%);
-              transform: translateX(-50%); } }
+              transform: translateX(-50%);
+      text-align: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
   @media screen and (max-width: 600px) {
     .title {
       margin-top: 90vw; } }
@@ -265,6 +269,12 @@ a {
               box-shadow: 0 2px 4px white; }
     .title__action:active {
       border: 1px solid white; }
+    @media screen and (max-width: 450px) {
+      .title__action {
+        bottom: 50px; } }
+    @media screen and (max-width: 450px) {
+      .title__action {
+        bottom: 30px; } }
 
 .carousel {
   position: absolute;
@@ -506,6 +516,10 @@ a {
   @media screen and (max-width: 768px) {
     .wwa {
       margin: 80px auto; } }
+  @media screen and (max-width: 450px) {
+    .wwa {
+      margin: 20px auto;
+      text-align: center; } }
   .wwa__title {
     margin-bottom: 16px;
     font-family: "Poppins", sans-serif;
@@ -537,6 +551,9 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
     padding-bottom: 64px; }
+    @media screen and (max-width: 450px) {
+      .expertise__title {
+        padding-bottom: 30px; } }
     .expertise__title_text {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
@@ -594,6 +611,9 @@ a {
       color: #253757;
       font-size: 20px;
       line-height: 140%; }
+      @media screen and (max-width: 450px) {
+        .cards__1_title {
+          margin-top: 16px; } }
     .cards__1_description {
       display: inline-block;
       font-family: "Open Sans", sans-serif;
@@ -622,6 +642,9 @@ a {
       color: #253757;
       font-size: 20px;
       line-height: 140%; }
+      @media screen and (max-width: 450px) {
+        .cards__2_title {
+          margin-top: 16px; } }
     .cards__2_description {
       font-family: "Open Sans", sans-serif;
       font-size: 14px;
@@ -650,6 +673,9 @@ a {
       color: #253757;
       font-size: 20px;
       line-height: 140%; }
+      @media screen and (max-width: 450px) {
+        .cards__3_title {
+          margin-top: 16px; } }
     .cards__3_description {
       font-family: "Open Sans", sans-serif;
       font-size: 14px;
@@ -697,7 +723,7 @@ a {
         margin: 40px auto 30px; } }
   .process__info {
     max-width: 362px; }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 450px) {
       .process__info {
         text-align: center; } }
     .process__info_header {
@@ -1059,6 +1085,9 @@ a {
       .approach__wrap {
         border-top-left-radius: 50px;
         border-bottom-left-radius: 50px; } }
+    @media screen and (max-width: 450px) {
+      .approach__wrap {
+        height: 1000px; } }
     @media screen and (min-width: 2000px) {
       .approach__wrap {
         -webkit-box-pack: center;
@@ -1205,10 +1234,11 @@ a {
               -ms-flex-pack: center;
                   justify-content: center;
           border-radius: 50px; } }
-      @media screen and (max-width: 400px) {
+      @media screen and (max-width: 450px) {
         .approach__image_img {
           border-radius: 20px;
-          height: 100%; } }
+          width: 80vw;
+          height: 80vw; } }
 
 .apptitle {
   -webkit-transition: text-align 1s;
@@ -1832,7 +1862,10 @@ a {
         height: 630px; } }
     @media screen and (max-width: 700px) {
       .footer__wrap {
-        height: 890px; } }
+        height: 930px; } }
+    @media screen and (max-width: 398px) {
+      .footer__wrap {
+        height: 1030px; } }
   .footer__info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2031,6 +2064,9 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media screen and (max-width: 700px) {
+    .socialimage {
+      margin: 20px auto 0; } }
   .socialimage_fb {
     background-image: url("../images/socials/Vectorfb.svg");
     background-repeat: no-repeat;
