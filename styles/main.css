@@ -1477,10 +1477,14 @@ a {
       -webkit-box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
               box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
       border-radius: 24px;
-      -webkit-transition: width 1s, margin-bottom 1s, -webkit-transform 1s;
-      transition: width 1s, margin-bottom 1s, -webkit-transform 1s;
-      transition: width 1s, margin-bottom 1s, transform 1s;
-      transition: width 1s, margin-bottom 1s, transform 1s, -webkit-transform 1s; }
+      -webkit-transition: width 1s, margin-bottom 1s, -webkit-transform 1s, -webkit-box-shadow 1s;
+      transition: width 1s, margin-bottom 1s, -webkit-transform 1s, -webkit-box-shadow 1s;
+      transition: width 1s, margin-bottom 1s, transform 1s, box-shadow 1s;
+      transition: width 1s, margin-bottom 1s, transform 1s, box-shadow 1s, -webkit-transform 1s, -webkit-box-shadow 1s; }
+      .testimonials__cards_card:hover {
+        -webkit-box-shadow: 0 2px 4px black;
+                box-shadow: 0 2px 4px black;
+        cursor: pointer; }
       @media screen and (max-width: 1180px) {
         .testimonials__cards_card {
           width: 250px; } }
