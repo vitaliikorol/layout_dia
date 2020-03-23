@@ -24,6 +24,8 @@ h4 {
 
 a {
   text-decoration: none; }
+  a:focus {
+    outline: none; }
 
 .header {
   background-color: #008aff;
@@ -137,6 +139,9 @@ a {
       -webkit-box-shadow: 0 2px 4px white;
               box-shadow: 0 2px 4px white;
       cursor: pointer; }
+    .nav__img_wrap {
+      width: 65px;
+      height: 40px; }
   .nav__hiring {
     line-height: 170%;
     padding: 0 10px 5px;
