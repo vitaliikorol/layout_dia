@@ -59,7 +59,7 @@ a {
       border-bottom-left-radius: 100px; } }
   @media screen and (max-width: 450px) {
     .header {
-      height: 800px;
+      height: 820px;
       border-bottom-left-radius: 70px; } }
   @media screen and (max-width: 380px) {
     .header {
@@ -326,7 +326,17 @@ a {
     transition: bottom 1s; }
     @media screen and (max-width: 760px) {
       .carousel__control {
-        display: none; } }
+        width: 100%;
+        margin: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        left: 0;
+        height: 100%;
+        bottom: 0; } }
     .carousel__control_left {
       background-image: url("../images/slider/Vectorarr_left.svg");
       background-repeat: no-repeat;
@@ -348,6 +358,13 @@ a {
                 box-shadow: 0 2px 6px #f4dadd; }
       .carousel__control_left:active {
         border: double #f99f94; }
+      @media screen and (max-width: 760px) {
+        .carousel__control_left {
+          height: 90%;
+          width: 70px;
+          border-radius: 50px;
+          margin-top: 5%;
+          opacity: 0; } }
     .carousel__control_right {
       background-image: url("../images/slider/Vector.svg");
       background-repeat: no-repeat;
@@ -368,6 +385,13 @@ a {
                 box-shadow: 0 2px 6px #f4dadd; }
       .carousel__control_right:active {
         border: double #f99f94; }
+      @media screen and (max-width: 760px) {
+        .carousel__control_right {
+          height: 90%;
+          width: 70px;
+          border-radius: 50px;
+          margin-top: 5%;
+          opacity: 0; } }
   .carousel__title {
     display: -webkit-box;
     display: -ms-flexbox;
